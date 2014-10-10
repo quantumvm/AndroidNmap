@@ -15,7 +15,9 @@ The make file is based on the one found here: https://github.com/kost/nmap-andro
 
 
 If you are compiling from bash you will have to modify the android NDK. At line 723 you need to change:
-     
-for ABI in $(tr ',' ' ' <<< $ABIS); do
-to
-for ABI in $(echo "$ABIS" | tr ',' ' '); do
+
+```bash
+for ABI in $(tr ',' ' ' <<< $ABIS); do  
+to  
+for ABI in $(echo "$ABIS" | tr ',' ' '); do  
+```
