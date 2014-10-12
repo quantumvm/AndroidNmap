@@ -1,3 +1,4 @@
+# Based on make file found here: https://github.com/kost/nmap-android/blob/master/android/Makefile
 # edit line below if you have NDK to reflect the path where NDK is installed
 NDK=/tmp/android-ndk-r10b
 NDKDEST=/tmp/ndk
